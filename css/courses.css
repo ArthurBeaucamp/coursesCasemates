@@ -1,0 +1,25 @@
+.myButton {
+    box-shadow: 0px 10px 14px -7px #293133;
+    background: linear-gradient(to bottom, #293133 5%, #293133 100%);
+    background-color: #293133;
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    color: #FF8000;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 13px 32px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #293133;
+    margin: 15px;
+    margin-bottom: 1.5em;
+}
+
+.myButton:hover{
+    font-weight: bold;
+}
+
+#resultat p{
+    margin: 0.25em;
+}

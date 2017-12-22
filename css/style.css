@@ -1,254 +1,118 @@
 *{
-  padding: 0;
-  margin: 0;
-  font-family: "FontAwesome", Arial, serif;
+    font-family: arial;
 }
-
+body{
+    background: #F9F9F9;
+}
+#container{
+    color: #FF8000;
+    text-align: center;
+}
 a{
-  text-decoration: none;
-  color: #FF8000;
+    color: #FF8000;
 }
+a:hover{
+    text-decoration: none;
+    font-weight: bold;
 
+    color: #FF8000;
+}
 mark{
-  background-color: white;
-  color: #FF8000;
-  font-size: 1.2em;
-  font-weight: bold;
+    background: #FFFFFF;
+    color: #FF8000;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
-section{
-  padding-bottom: 25px;
-  display : block;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 1.1em;
-  line-height: 25px;
-}
+/*
+ ~~~Header~~~
+ */
 
-section img{
-  margin: 10px;
-}
-
-@media screen and (min-width: 769px){
-  section{
-    max-width: 70%;
-  }
-}
-
-@font-face{
-  font-family: "FontAwesome";
-  src: url("fonts/FontAwesome.otf") format("otf"),
-      url("fonts/fontawesome-webfont.eot") format("eot"),
-      url("fonts/fontawesome-webfont.svg") format("svg"),
-      url("fonts/fontawesome-webfont.ttf") format("truetype"),
-      url("fonts/fontawesome-webfont.woff") format("woff");
-}
-
-/* header */
-
-header{
-  z-index: 10000;
-  position: fixed;
-  height: 50px;
-  width: 100%;
-  background-color: #293133;
-  border-bottom: black solid 1px;
-}
 nav{
-  padding-top: 8px;
+    background: #293133;
+    display: flex;
+    flex-wrap: nowrap;
+
+    text-align: center;
+}
+nav a{
+    font-size: 1.7em;
+    box-sizing: border-box;
+    width: 25%;
 }
 
-.step1 li{
-  font-size: 28px;
-  color: #FF8000;
-  text-align: center;
-  display: inline-block;
-  width: 24%;
+#containerVisual{
+    position: relative;
+
 }
-.step1 li:hover{
-  font-weight: bold;
+#informationVisual{
+    display: inline-block;
+    position: absolute;
+    margin: 2.5em 3em;
+    transform: rotate(-5deg);
 }
-nav .step2{
-  display: none;
+h1{
+    font-size: 3em;
+}
+#informationVisual p{
+    margin-bottom: 0;
+    font-size: 1.3em;
+}
+#containerVisual img{
+    height: 400px;
+    width: 100%;
+    box-shadow: 0 5px 20px 5px #293133;
 }
 
-/* Visuel */
+/*
+ ~~~Main + footer~~~
+ */
 
-#visuel{
-  padding-top: 50px;
-  padding-bottom: 12px;
+main{
+    max-width: 1200px;
+    margin: auto;
+    background: white;
 }
-#banniere img{
-max-height: 450px;
-}
-#info{
-  position: absolute;
-  left: 40px;
-  top: 100px;
-  text-align: center;
-  color: #FF8000;
-  transform: rotate(-6deg);
-  -moz-transform: rotate(-6deg);
-  -webkit-transform: rotate(-6deg);
-  -khtml-transform: rotate(-6deg);
-}
-#info h1{
-  font-size: 46px;
-  padding-bottom: 8px;
-}
-#info p{
-  font-size: 24px;
-  line-height: 32px;
-}
+h2, h3{
+    display: inline-block;
+    margin: .5em auto;
+    padding: .5em 1em;
+    border-radius: 40px;
 
-/* section générale + banniere */
+    background: #293133;
+    font-size: 2.5em;
+}
+h3{
+    margin: .2em auto;
+    padding: .25em .5em;
+    border-radius: 10px;
 
-section{
-  text-align: center;
+    font-size: 1.5em;
 }
-section h2{
-  display : block;
-  margin-left: auto;
-  margin-right: auto;
-  color: #FF8000;
-  background-color: #293133;
-  padding: 30px;
-  width : 35%;
-  font-size: 46px;
-  border-radius: 50%;
-  margin-bottom: 30px;
-  line-height: 40px;
+main p{
+    margin: 1em;
+    color: black;
+    font-size: 1em;
 }
-
-#logoBanniere img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 40px;
-  padding-bottom: 40px;
+main a:hover, footer a:hover{
+    font-weight: normal;
+    text-decoration: underline;
 }
-
-/* Section des partenaires et actus */
-
-#conteneurPartenaires, #conteneurPartenairesPetit{
-  display : block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 10px;
-}
-#conteneurPartenaires img{
-  max-height: 80px;
-  width: 25px;
-}
-#conteneurPartenairesPetit img{
-  max-height: 70px;
-}
-
-#conteneurActu{
-  display : block;
-  margin-left: auto;
-  margin-right: auto;
-}
-#actu h3{
-  font-size: 26px;
-  padding-bottom: 25px;
-}
-#actu p{
-  font-size: 21px;
-  padding-bottom: 50px;
-}
-#actu img{
-  float: right;
-  border-radius: 20%;
-}
-
-/* Footer */
-
 footer{
-  text-align: center;
-  font-size: 21px;
-  width: 100%;
-  background-color: #293133;
-  color: #FF8000;
-  padding: 5px;
+    margin: 0;
+    padding: .2em;
+    font-size: 1.5em;
+
+    background: #293133;
 }
 
-/* PRESENTATION */
+/*
+ ~~~Style spécifique~~~
+ */
 
-#evenement img{
-  float: right;
-  border-radius: 20%;
-}
-#histoire img{
-  float: right;
-  border-radius: 5%;
-}
-
-@media screen and (min-width: 769px){
-  #evenement{
-    max-width: 60%;
-  }
-  #histoire{
-    max-width: 60%;
-  }
-}
-
-#programme img{
-  width: auto;
-  max-height: 800px;
-}
-
-#comite ul{
-   list-style-type: none;
-}
-
-/* Courses */
-
-.myButton {
-	-moz-box-shadow: 0px 10px 14px -7px #293133;
-	-webkit-box-shadow: 0px 10px 14px -7px #293133;
-	box-shadow: 0px 10px 14px -7px #293133;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #293133), color-stop(1, #293133));
-	background:-moz-linear-gradient(top, #293133 5%, #293133 100%);
-	background:-webkit-linear-gradient(top, #293133 5%, #293133 100%);
-	background:-o-linear-gradient(top, #293133 5%, #293133 100%);
-	background:-ms-linear-gradient(top, #293133 5%, #293133 100%);
-	background:linear-gradient(to bottom, #293133 5%, #293133 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#293133', endColorstr='#293133',GradientType=0);
-	background-color:#293133;
-	-moz-border-radius:8px;
-	-webkit-border-radius:8px;
-	border-radius:8px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ff8000;
-	font-family:Arial;
-	font-size:20px;
-	font-weight:bold;
-	padding:13px 32px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #293133;
-  margin: 15px;
-}
-
-.myButton:hover{
-  font-size: 22px;
-}
-
-#boumcoeurs img:hover{
-  height: 900px;
-}
-
-#rush img:hover{
-  height: 900px;
-}
-
-/* Coureurs */
-
-#inscription img{
-  border-radius: 10px;
-}
-
-#inscription a:hover{
-  font-size: 1.3em;
+.encadrement{
+    border-radius: 5px;
+    padding: 5px;
+    border: lightgray solid 1px;
+    box-shadow: 0 5px 10px 1px #293133;
 }
