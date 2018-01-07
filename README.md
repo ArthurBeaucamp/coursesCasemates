@@ -1,0 +1,3 @@
+- Lien sur le h1 qui renvoie à l'index
+- Format des courses à modifier section coureurs + animation sur img
+- formulaire de contact
